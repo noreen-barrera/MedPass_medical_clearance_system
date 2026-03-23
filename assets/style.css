@@ -1,0 +1,184 @@
+/* Global Box Sizing to Prevent Overflow */
+* {
+    box-sizing: border-box;    /* Includes padding and border in the width */
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR LAYOUT */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    transition: top 0.3s ease-in-out;    /* Smooth hiding effect */
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;                            /* Reduced gap between links and button */
+}
+
+/* Prevent Content From Hiding Behind Navbar */
+main, .content {
+    padding-top: 120px;               /* Pushes content down */
+}
+
+/* Navbar Logo */
+.nav-logo a {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-logo span {
+    color: #28a745;                   /* Green color for 'Pass' */
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;                        /* Remove margin to prevent spacing issues */
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #28a745;
+}
+
+/* Logout Button */
+.nav-actions .logout-btn {
+    background: #000;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-actions .logout-btn:hover {
+    background: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;         /* Stack navbar items vertically */
+        align-items: flex-start;
+        padding: 15px 30px;
+    }
+
+    .nav-links {
+        flex-direction: column;         /* Stack links vertically */
+        gap: 15px;
+    }
+
+    .nav-actions {
+        margin-top: 15px;
+    }
+}
+
+
+/* ADMIN DASHBOARD LAYOUT */
+.admin-dashboard {
+    margin-top: 10px;
+    padding: 40px;
+    background: #f5f5f5;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.dashboard-header p {
+    font-size: 18px;
+    color: #28a745; /* Red color to signify admin access */
+    font-weight: bold;
+}
+
+/* Feature Cards */
+.feature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(33.333% - 30px); 
+    max-width: 400px;
+    box-sizing: border-box;
+    min-height: 250px;  /* Adjust as needed */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h2 {
+    font-size: 22px;
+    color: #218838; /* Dark red to distinguish admin panel */
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background: #218838; /* Dark red for admin actions */
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #28a745;
+}

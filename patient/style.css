@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #fffff0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.forgot-password-container {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.header {
+    background-color: #FAF9F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    width: 100%
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.btn-login-header {
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+h2 {
+    margin-top: -25px;
+    text-align: center;
+}
+
+.subtitle.small-text {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.reset-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #002eb8
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+.logo-black {
+    color: #000000 !important;
+}
+
+.logo-green {
+    color: #4CAF50;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav a.active {
+    color: #2e9d4c; 
+    font-weight: bold;
+}
+
+
+.logout-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main {
+    padding: 40px 80px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.view-profile-btn {
+    display: inline-block;
+    background-color: #1e6823;
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.illustration {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+
+.login-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.main-logo {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.forgot-password-container {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.forgot-password {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+.password-info {
+    margin-top: 30px;
+    color: #002467;
+    text-align: center;
+}
+
+.password-main {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.password-sub {
+    margin-bottom: 10px;
+}
+
+.password-details {
+    font-size: 14px;
+    color: #828282;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.contact-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    color: #828282;
+}
+
+.label {
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 70px;
+}
+
+.profile-info p {
+    font-size: 25px; 
+}
+
+.medical-clearance h2 {
+    font-size:30px;
+}
+
+.change-password button{
+    background-color: #630000;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.change-password button:hover {
+    background-color: #941818; 
+}
+
+.change-password button:active {
+    background-color: #410000; 
+}
+
+.medical-clearance table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px; 
+}
+
+.medical-clearance th, 
+.medical-clearance td {
+    border: 2px solid black; 
+    padding: 10px; 
+    text-align: center; 
+    font-weight: bold;
+}
+
+.medical-clearance th {
+    background-color: #bfdcff; 
+    color: rgb(0, 0, 0); 
+    font-weight: bold;
+}
+
+.medical-clearance tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.changepass-page {
+    background-color: #fffff0;
+}
+
+.changepass-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.changepass-page header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.changepass-page .logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.changepass-page .logo span {
+    color: #2cb74a;
+}
+
+.changepass-page nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.changepass-page nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.changepass-page .logout-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.changepass-page main {
+    padding: 40px 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.changepass-page h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.changepass-page .subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.changepass-page .form-group {
+    margin-bottom: 30px;
+}
+
+.changepass-page label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.changepass-page input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.changepass-page input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+
+.changepass-page .buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.changepass-page .save-btn {
+    background-color: #3a36e0;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.changepass-page .cancel-btn {
+    background-color: #666;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.download-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #45a049; 
+}
+
+
+.download-btn:focus {
+    outline: none; 
+}
+
+.no-file {
+    color: #888;
+    font-style: italic;
+}
+
